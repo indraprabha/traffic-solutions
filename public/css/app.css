@@ -1,0 +1,131 @@
+body {
+	padding-top: 70px;
+	padding-bottom: 30px;
+	 font-size: 13px;
+	 font-family: "Courgette";
+	 font-style: normal;
+	 font-weight: 200;
+}
+h1 {
+	font-size: 72px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    margin-left: 50px;
+}
+h2 {
+	margin-top: 0.5em;
+}
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2%;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.addToCartSection {
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.autocomplete-suggestions {
+    border: 1px solid #999;
+    background: #fff;
+    cursor: default;
+    overflow: auto;
+}
+.autocomplete-suggestion {
+    padding: 10px 5px;
+    font-size: 1.2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.autocomplete-selected {
+    background: #f0f0f0;
+}
+.autocomplete-suggestions strong {
+    font-weight: normal;
+    color: #3399ff;
+}
+.carousel-control {
+    opacity: 1
+}
+.carousel-caption {
+    color: white;
+    font-size: 25px;
+}
+.checkbox {
+    /* All browsers except webkit*/
+    transform: scale(1.5);
+
+    /* Webkit browsers*/
+    -webkit-transform: scale(1.5);
+}
+.floatright {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+.item {
+    margin: 15px;
+}
+.row {
+    margin-top: 10px;
+}
+.theme-dropdown .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.theme-showcase .navbar .container {
+    width: auto;
+}
+
+/*#map {
+    width: 350px;
+    height: 300px;
+    background-color: #CCC;
+}*/
+#menu {
+    border: ridge;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+#userInfo {
+    display: inline;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 35px
+}
+#userInfo form {
+  display: inline-block;
+  background: #eeefed;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px 0 0 20px;
+}
+#userInfo form .biginput {
+  width: 400px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+    margin: 10px 10px 10px 10px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 10px;
+  color: #aeaeae;
+  font-weight:normal;
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#userInfo form .biginput:focus {
+  color: #858585;
+}

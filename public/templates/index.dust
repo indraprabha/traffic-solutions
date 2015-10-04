@@ -1,0 +1,198 @@
+{>"layouts/master" /}
+
+{<body}
+    <!--div id="map" class="floatright">Catering to areas 5km around Kodambakkam</div-->
+    <div class="container theme-showcase">
+        <h2>MealBasket.in</h2>
+        <p>Delivering Tiffin boxes with Fresh, Healthy Home food..</p>
+
+        <div id="userInfo">
+            <form>
+                <label> Select your Location </label>
+                <input type="text" name="userLocation" class="biginput" id="userLocation"/>
+            </form>
+            <div id="serviceUnavailableMessage" hidden="hidden">
+                <h2>
+                    <span class="label label-warning"> Our service is not available at selected location </span>
+                </h2>
+            </div>
+        </div>
+        <hr/>
+        <div id="menu" class="panel panel-primary" hidden="hidden">
+            <div class="panel-heading">
+                <h3 class="panel-title">Select Order for coming weekdays</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-2 col-xs-4">
+                        <div id="breakfastCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#breakfastCarousel" data-slide-to="0" class="active">
+                            </li>
+                            <li data-target="#breakfastCarousel" data-slide-to="1"></li>
+                            <li data-target="#breakfastCarousel" data-slide-to="2"></li>
+                            <li data-target="#breakfastCarousel" data-slide-to="3"></li>
+                            <li data-target="#breakfastCarousel" data-slide-to="4"></li>
+                          </ol>
+
+                           <!-- Wrapper for slides -->
+                           <div class="carousel-inner">
+                             <div class="item active">
+                                <img src="images/menu/breakfast/monday.jpg" class="img-responsive"/>
+                                <div class="carousel-caption">Monday</div>
+                             </div>
+                             <div class="item">
+                                    <img src="images/menu/breakfast/tuesday.jpg" class="img-responsive"/>
+                                    <div class="carousel-caption">Tuesday</div>
+                             </div>
+                             <div class="item">
+                                    <img src="images/menu/breakfast/wednesday.jpg" class="img-responsive"/>
+                                    <div class="carousel-caption">Wednesday</div>
+                             </div>
+                             <div class="item">
+                                    <img src="images/menu/breakfast/thursday.jpg" class="img-responsive"/>
+                                    <div class="carousel-caption">Thursday</div>
+                             </div>
+                             <div class="item">
+                                    <img src="images/menu/breakfast/friday.jpg" class="img-responsive"/>
+                                    <div class="carousel-caption">Friday</div>
+                             </div>
+                           </div>
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#breakfastCarousel"
+                             role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+                          </a>
+                          <a class="right carousel-control" href="#breakfastCarousel"
+                             role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+                          </a>
+                      </div>
+                        <div class="addToCartSection">
+                            <div class="checkbox checkbox-warning checkbox-circle">
+                                <input id="breakfastSelect" type="checkbox" checked/><label for="breakfastSelect"> Breakfast </label>
+                            </div>
+                            <span class="badge"> 300 Rs.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <div id="lunchCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#lunchCarousel" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#lunchCarousel" data-slide-to="1"></li>
+                                <li data-target="#lunchCarousel" data-slide-to="2"></li>
+                                <li data-target="#lunchCarousel" data-slide-to="3"></li>
+                                <li data-target="#lunchCarousel" data-slide-to="4"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/menu/lunch/monday.jpg" class="img-responsive" alt="Meals with Sambar"/>
+                                    <div class="carousel-caption">Monday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/lunch/tuesday.jpg" class="img-responsive" alt="Meals with Keera Kolambu"/>
+                                    <div class="carousel-caption">Tuesday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/lunch/wednesday.jpg" class="img-responsive" alt="Variety Rice"/>
+                                    <div class="carousel-caption">Wednesday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/lunch/thursday.jpg" class="img-responsive" alt="Meals with Mor Kolambu"/>
+                                    <div class="carousel-caption">Thursday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/lunch/friday.jpg" class="img-responsive" alt="Meals with Sambar"/>
+                                    <div class="carousel-caption">Friday</div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#lunchCarousel"
+                               role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+                            </a>
+                            <a class="right carousel-control" href="#lunchCarousel"
+                               role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+                            </a>
+                        </div>
+                        <div class="addToCartSection">
+                            <div class="checkbox checkbox-warning checkbox-circle">
+                                <input id="lunchSelect" type="checkbox" checked/><label for="lunchSelect"> Lunch </label>
+                            </div>
+                            <span class="badge"> 400 Rs.</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <div id="dinnerCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#dinnerCarousel" data-slide-to="0" class="active">
+                                </li>
+                                <li data-target="#dinnerCarousel" data-slide-to="1"></li>
+                                <li data-target="#dinnerCarousel" data-slide-to="2"></li>
+                                <li data-target="#dinnerCarousel" data-slide-to="3"></li>
+                                <li data-target="#dinnerCarousel" data-slide-to="4"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="images/menu/dinner/monday.jpg" class="img-responsive" alt="Chappathi"/>
+                                    <div class="carousel-caption">Monday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/dinner/tuesday.jpg" class="img-responsive" alt="Uthappam"/>
+                                    <div class="carousel-caption">Tuesday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/dinner/wednesday.jpg" class="img-responsive" alt="Idli"/>
+                                    <div class="carousel-caption">Wednesday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/dinner/thursday.jpg" class="img-responsive" alt="Kichidi"/>
+                                    <div class="carousel-caption">Thursday</div>
+                                </div>
+                                <div class="item">
+                                    <img src="images/menu/dinner/friday.jpg" class="img-responsive" alt="Idiyappam"/>
+                                    <div class="carousel-caption">Friday</div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#dinnerCarousel"
+                               role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+                            </a>
+                            <a class="right carousel-control" href="#dinnerCarousel"
+                               role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+                            </a>
+                        </div>
+                        <div class="addToCartSection">
+                            <div class="checkbox checkbox-warning checkbox-circle">
+                                <input id="dinnerSelect" type="checkbox" checked/><label for="dinnerSelect"> Dinner </label>
+                            </div>
+                            <span class="badge"> 300 Rs.</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="button" id="placeOrderButton" class="btn btn-lg btn-primary"> Place Order </button>
+                </div>
+            </div>
+		</div>
+    </div>
+ {/body}
