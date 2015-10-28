@@ -1,14 +1,21 @@
 {
 
-    
+    "mongodb": {
+        "hostname": "localhost",
+        "database": "mealbasketdb",
+        "port": 27017,
+        "username":"",
+        "password":""
+    },
+
     "express": {
         "view cache": false,
         "view engine": "js",
         "views": "path:./.build/templates"
     },
-    
 
-    
+
+
     "view engines": {
         "js": {
             "module": "makara",
@@ -23,19 +30,19 @@
 
     "dust": {
         "helpers": [
-    
+            "dustjs-helpers"
         ]
     },
-    
 
-    
+
+
 
     "specialization": {
     },
 
     "middleware": {
 
-        
+
         "makara": {
             "priority": 100,
             "enabled": true,
@@ -49,7 +56,7 @@
                 ]
             }
         },
-        
+
 
         "static": {
             "module": {

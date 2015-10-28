@@ -2,6 +2,6 @@
 
 module.exports = function IndexModel() {
     return {
-        name: 'fooo'
+        active: 'home'
     };
 };
