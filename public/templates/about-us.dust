@@ -1,0 +1,10 @@
+{>"layouts/master" /}
+
+{<body}
+    <div class="container jumbotron">
+        <h3>About Us</h3>
+        <p>
+            MealBasket is the brainchild of Parvathi and Kannan, who believes in bringing home food to everyone's home.
+        </p>
+    </div>
+{/body}

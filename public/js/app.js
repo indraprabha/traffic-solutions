@@ -28,10 +28,12 @@ $(function(){
                             + ' <br> <strong>Symbol:</strong> '
                             + suggestion.data;*/
             $('#serviceUnavailableMessage').hide();
+            $('#ad').hide();
             $('#menu').show();
         }
     });
     $('#userLocation').change(function(){
+        // TODO: cache selected location
         var userLocation = $('#userLocation').val();
         var serviceAvailable = false;
         serveLocations.forEach(function(item){
@@ -40,6 +42,7 @@ $(function(){
             if(locationItem && locationItem.toLowerCase() == userLocation.toLowerCase() ){
                 serviceAvailable = true;
                 $('#serviceUnavailableMessage').hide();
+                $('#ad').hide();
                 $('#menu').show();
                 return;
             }
@@ -48,7 +51,8 @@ $(function(){
             $('#menu').hide();
             $('#serviceUnavailableMessage').show();
         }
-    })
+    });
+    $("#ad").load("/ads/banner/index.html");
 });
 
 $('#breakfastCarousel').carousel({

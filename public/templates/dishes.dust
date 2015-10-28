@@ -1,0 +1,51 @@
+{>"layouts/master" /}
+
+{<body}
+
+    <main role="main" class="container">
+        <h2>Menu Editor</h2>
+        <fieldset>
+            <legend>Add a new dish</legend>
+            <form method="POST" action="/dishes">
+                <input name="name" placeholder="Dish Name"><br>
+                <input name="description" placeholder="Description"><br>
+                <input name="price" placeholder="Price"><br>
+                <input name="quantity" placeholder="Quantity"><br>
+                <input type="hidden" name="_csrf" value="{_csrf}">
+                <button class="btn-primary" type="submit" value="Save"> Save </button>
+            </form>
+        </fieldset>
+        <br>
+
+        <div class="dishes">
+            {?dishes}
+            <fieldset>
+                <legend>All Dishes List</legend>
+                <ul class="nm-np inline">
+                    {#dishes}
+                    <li>
+                        <form method="POST" action="/dishes">
+                            <input type="hidden" name="item_id" value="{.id}">
+
+                            <h3 class="nm-np">{.name}</h3>
+                            <h4 class="nm-np">{.prettyPrice}</h4>
+                            <h4 class="nm-np">{.description}</h4>
+                            <h4 class="nm-np">{.quantity}</h4>
+                            <h5 class="nm-np tiny">ID: {.id}</h5>
+
+                            <button class="btn-primary" type="submit" value="Delete"> Delete </button>
+                            <!--If we don't at the Cross-Site Request Forgey token, this POST will be rejected-->
+                            <input type="hidden" name="_csrf" value="{_csrf}">
+                            <input type="hidden" name="_method" value="DELETE">
+                        </form>
+                    </li>
+                    {/dishes}
+                </ul>
+            </fieldset>
+            {:else}
+            There are no products :(
+            {/dishes}
+        </div>
+    </main>
+
+{/body}

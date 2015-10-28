@@ -1,29 +1,76 @@
+html{
+    height: 100%;
+}
 body {
-	padding-top: 70px;
 	padding-bottom: 30px;
-	 font-size: 13px;
-	 font-family: "Courgette";
-	 font-style: normal;
-	 font-weight: 200;
+    font-size: 13px;
+	font-family: "Salsa";
+	font-style: normal;
+	font-weight: 200;
+    background-color: cornsilk;
+    min-height: 100%;
+    position: relative;
 }
-h1 {
-	font-size: 72px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-    margin-left: 50px;
-}
-h2 {
-	margin-top: 0.5em;
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
 }
 footer {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 2%;
     background-color: black;
     color: #FFFFFF;
+}
+form {
+    font-weight:normal;
+    font-size: 1.2em;
+}
+form > input {
+    width: 400px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 10px;
+    color: #aeaeae;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+form > input:focus {
+    color: #858585;
+}
+
+form > button {
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    margin: 10px 10px 10px 10px;
+}
+h1 {
+    font-size: 72px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+h2 {
+    margin-top: 0.5em;
+}
+legend {
+    width:inherit;
+    padding:0 10px;
+    border-bottom:none;
+    margin-bottom: 5px;
 }
 
 .addToCartSection {
@@ -64,6 +111,14 @@ footer {
     /* Webkit browsers*/
     -webkit-transform: scale(1.5);
 }
+.dishes li {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,.5);
+    padding: .75em;
+    margin: .25em;
+    border-radius: 5px;
+    display: inline-block;
+}
 .floatright {
     float: right;
     margin-left: 10px;
@@ -71,6 +126,63 @@ footer {
 }
 .item {
     margin: 15px;
+}
+.item > img {
+    width: 100%;
+}
+.jumbo {
+    display: inline;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.jumbotron {
+    color: white;
+    /*background-image: linear-gradient(to bottom, #337ab7 0%, #2e6da4 100%);*/
+    background-image: url('/images/background.png');
+    background-color: crimson;
+    padding-left: 50px;
+}
+.logo {
+    max-width:60px;
+    margin-top: -7px;
+    padding: 5px;
+}
+.navbar   {
+    width: auto!important;
+    height: auto!important;
+    margin: 0 20px -30px -31px!important;
+    padding: 20px!important;
+    border-radius: 4px;
+    border: solid rgba(255,255,255,.5)!important;
+    border-width: 1px 0!important;
+    overflow: hidden;
+    text-align: left;
+    font-size: 13px!important;
+    line-height: 16px!important;
+    background: transparent!important;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,.4)
+}
+.navbar-brand, .navbar-nav > li > a {
+    color: whitesmoke;
+}
+.nav > li.active {
+    background-color: whitesmoke;
+}
+.nav > li.active > a {
+    color: crimson;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    color: crimson;
+}
+.nm-np {
+    margin: 0;
+    padding: 0;
+}
+.panel-red > .panel-heading {
+    background-image: linear-gradient(to bottom, #DE3F3F 0%, #A42E2E 100%);
+    background-repeat: repeat-x;
+    color: whitesmoke;
 }
 .row {
     margin-top: 10px;
@@ -83,6 +195,13 @@ footer {
 
 .theme-showcase .navbar .container {
     width: auto;
+}
+.thumbnail {
+    width: 100%;
+}
+.tiny {
+    font-size: .75em;
+    font-weight: lighter;
 }
 
 /*#map {
@@ -102,30 +221,4 @@ footer {
     text-align: center;
     margin-bottom: 35px
 }
-#userInfo form {
-  display: inline-block;
-  background: #eeefed;
-  padding: 0;
-  margin: 0;
-  padding: 5px;
-  border-radius: 10px;
-  margin: 5px 0 0 20px;
-}
-#userInfo form .biginput {
-  width: 400px;
-  height: 40px;
-  padding: 0 10px 0 10px;
-    margin: 10px 10px 10px 10px;
-  background-color: #fff;
-  border: 1px solid #c8c8c8;
-  border-radius: 10px;
-  color: #aeaeae;
-  font-weight:normal;
-  font-size: 1.5em;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-#userInfo form .biginput:focus {
-  color: #858585;
-}
+
