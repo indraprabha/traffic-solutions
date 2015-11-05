@@ -1,0 +1,283 @@
+
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans);
+
+* {margin: 0; padding: 0;}
+
+/*html, body {min-height: 100%;}
+
+body {
+    text-align: center;
+    background: #689976;
+    background: linear-gradient(#689976, #ACDACC);
+    font-family: 'Merriweather Sans', arial, verdana;
+}*/
+
+.breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    color: white;
+    /*need more margin on the left of links to accomodate the numbers*/
+    padding: 0 10px 0 60px;
+    background: #666;
+    background: linear-gradient(#666, #333);
+    position: relative;
+}
+/*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+.breadcrumb a:first-child {
+    padding-left: 46px;
+    border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+}
+.breadcrumb a:first-child:before {
+    left: 14px;
+}
+.breadcrumb a:last-child {
+    border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+    padding-right: 20px;
+}
+
+/*hover/active styles*/
+.breadcrumb a.active, .breadcrumb a:hover{
+    background: #333;
+    background: linear-gradient(#333, #000);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+    background: #333;
+    background: linear-gradient(135deg, #333, #000);
+}
+
+/*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+.breadcrumb a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px; /*half of square's length*/
+    /*same dimension as the line-height of .breadcrumb a */
+    width: 36px;
+    height: 36px;
+    /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's:
+    length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+    if diagonal required = 1; length = 1/1.414 = 0.707*/
+    transform: scale(0.707) rotate(45deg);
+    /*we need to prevent the arrows from getting buried under the next link*/
+    z-index: 1;
+    /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+    background: #666;
+    background: linear-gradient(135deg, #666, #333);
+    /*stylish arrow design using -webkit-box shadow*/
+    box-shadow:
+    2px -2px 0 2px rgba(0, 0, 0, 0.4),
+    3px -3px 0 2px rgba(255, 255, 255, 0.1);
+    /*
+        5px - for rounded arrows and
+        50px - to prevent hover glitches on the border created using shadows*/
+    border-radius: 0 5px 0 50px;
+}
+/*we dont need an arrow after the last link*/
+.breadcrumb a:last-child:after {
+    content: none;
+}
+/*we will use the :before element to show numbers*/
+.breadcrumb a:before {
+    /* For breadcrumb Ordered
+    content: counter(flag);
+    counter-increment: flag;*/
+    /*some styles now*/
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #444;
+    background: linear-gradient(#444, #222);
+    font-weight: bold;
+}
+
+.flat a {
+    cursor: default;
+    font-weight: bolder;
+}
+.flat a, .flat a:after {
+    background: white;
+    color: black;
+    transition: all 0.5s;
+}
+.flat a:before {
+    background: white;
+    box-shadow: 0 0 0 1px #ccc;
+}
+.flat a:hover, .flat a.active,
+.flat a:hover:after, .flat a.active:after{
+    background: #9EEB62;
+}
+
+/*Importing custom fonts
+@import url(http://thecodeplayer.com/uploads/fonts/fontawesome/css/font-awesome.min.css);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);*/
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+.icons {
+    margin: 0 auto;
+}
+.icons i {
+    display: block;
+    font-size: 24px;
+    line-height: 50px; width: 50px;
+    text-align: center;
+}
+.icons a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 12px;
+    position: relative;
+}
+/*Now we will create fish-eye shapes using pseudo elements and clip them to add a curve to the sides of the icons*/
+.icons a:before, .icons a:after {
+    content: '';
+    position: absolute; left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: inherit;
+    border-radius: 100%; /*circle*/
+    /*time to transform the circle into fish-eye shape. iOS7 style now.*/
+    transform: scaleX(2) scaleY(1.05);
+    /*clipping the left and right sides - 17px from the left and right*/
+    clip: rect(0, 33px, 50px, 17px);
+    /*pushing it behind the icon*/
+    z-index: -1;
+}
+/*duplicating the :before element and rotating it 90deg and swapping the X/Y transforms*/
+.icons a:after {
+    transform: scaleY(2) scaleX(1.05) rotate(90deg);
+}
+/*colors*/
+.tw {background: #00ACF0;}
+.fb {background: #3B5997;}
+.gp {background: #DB4F48;}
+.ig {background: #447397;}
+.li {background: #007DB8;}
+.yt {background: #D12E2E;}
+
+
+.accordian {
+    width: 70%;
+    height: 320px;
+    overflow: hidden;
+    text-align: left;
+    /*Time for some styling*/
+    margin: auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+    width: 2000px;
+    /*This will give ample space to the last item to move
+    instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+    position: relative;
+    display: block;
+    width: 160px;
+    float: left;
+    height: 50%;
+    border-left: 1px solid #888;
+
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to
+    see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {width: 40px;}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover {width: 480px;}
+
+
+.accordian li img {
+    display: block;
+    height: 320px;
+}
+
+/*Image title styles*/
+.image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 640px;
+
+}
+.image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+.flp {padding: 0 50px;}
+/*Let's place the label over the input*/
+.flp div {position: relative; margin-bottom: 30px;}
+
+.flp input, .flp label {
+	width: 400px; display: block;
+	font: inherit; font-size: 16px; line-height: 24px;
+	/*fixed height for FF line height issue. 
+	height = 24(lineheight) + 10*2(padding) + 2(border)*/
+	height: 46px;
+	border: 1px solid #999;
+}
+.flp input {padding: 10px; outline: none; border-radius: 3px;}
+.flp label {
+	position: absolute; left: 0; top: 0;
+	/*left/right padding will be 2px less, adjusted by padding on .ch*/
+	padding: 10px 8px;
+	border-color: transparent; color: #666;
+	cursor: text;
+}
+
+/*label styles*/
+.ch {
+	display: block; float: left;
+	position: relative; /*for upward animation*/
+	background: white; 
+}
+.ch:first-child {padding-left: 2px;}
+.ch:last-child {padding-right: 2px;}
+
+/*active input label*/
+.focussed {
+	/*when any input is already focussed clicking on it(label) again won't do anything*/
+	pointer-events: none;
+}
