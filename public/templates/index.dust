@@ -2,10 +2,40 @@
 
 {<body}
     <!--div id="map" class="floatright">Catering to areas 5km around Kodambakkam</div-->
+
     <div class="container theme-showcase">
+        <div class="accordian">
+            <ul>
+                <li>
+                    <div class="image_title">
+                        <a href="#">Breakfast Combos</a>
+                    </div>
+                    <a data-toggle="modal" href="#breakfastModal">
+                        <img src="images/menu/combos/breakfast.jpg">
+                    </a>
+                </li>
+                <li>
+                    <div class="image_title">
+                        <a href="#">Lunch Combos</a>
+                    </div>
+                    <a data-toggle="modal" href="#lunchModal">
+                        <img src="images/menu/combos/lunch.jpg">
+                    </a>
+                </li>
+                <li>
+                    <div class="image_title">
+                        <a href="#">Dinner Combos</a>
+                    </div>
+                    <a data-toggle="modal" href="#dinnerModal">
+                        <img src="images/menu/combos/dinner.jpg">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <br>
         <div id="userInfo">
             <form>
-                <label> Enter your Location </label>
+                <label for="userLocation"> Enter your Location </label>
                 <input type="text" name="userLocation" class="biginput" id="userLocation"/>
             </form>
             <div id="serviceUnavailableMessage" hidden="hidden">
@@ -14,8 +44,8 @@
                 </h2>
             </div>
         </div>
-        <br/>
-        <div id="menu" class="panel panel-red" hidden="hidden">
+        <br>
+        <div id="menu" class="container panel panel-red" hidden="hidden">
             <div class="panel-heading">
                 <h3 class="panel-title">Combo Options</h3>
             </div>
@@ -153,7 +183,7 @@
                     </div>
                     <div class="col-md-4 col-xs-4">
                         <a data-toggle="modal" href="#dinnerModal">
-                            <img class="thumbnail" src="images/menu/combos/dinner.jpg">
+                            <img class="thumbnail" src="images/menu/combos/dinnerOptions.jpg">
                         </a>
                         <div id="dinnerModal" class="modal fade">
                             <div class="modal-dialog">
@@ -219,11 +249,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <button type="button" id="placeOrderButton" class="btn btn-lg btn-danger"> Place Order </button>
+                    <button type="button" id="placeOrderButton" class="btn btn-lg btn-warning"> Place Order </button>
                 </div>
             </div>
 		</div>
         <hr/>
     </div>
-    <div id="ad" class="container" style="display:block;position: absolute;bottom: 150px;width: 100%;"></div>
+    <!--div id="ad" class="container" style="display:block;position: absolute;bottom: 150px;width: 100%;"></div-->
  {/body}
