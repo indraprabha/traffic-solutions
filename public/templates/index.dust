@@ -1,259 +1,124 @@
 {>"layouts/master" /}
 
 {<body}
-    <!--div id="map" class="floatright">Catering to areas 5km around Kodambakkam</div-->
+    <div id="photography" class="page-section">
+        <div class="container theme-showcase">
+            <div class="accordian">
+                <ul>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Adventures</a>
+                        </div>
+                        <a data-toggle="modal" href="#AdventuresModal">
+                            <img src="images/photography/Adventures.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Travel</a>
+                        </div>
+                        <a data-toggle="modal" href="#travelModal">
+                            <img src="images/photography/Travel.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Landscapes</a>
+                        </div>
+                        <a data-toggle="modal" href="#landscapeModal">
+                            <img src="images/photography/Landscapes.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Monochromes</a>
+                        </div>
+                        <a data-toggle="modal" href="#MonochromesModal">
+                            <img src="images/photography/Monochromes.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Cityscape</a>
+                        </div>
+                        <a data-toggle="modal" href="#CityscapeModal">
+                            <img src="images/photography/Cityscape.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Flowers</a>
+                        </div>
+                        <a data-toggle="modal" href="#FlowersModal">
+                            <img src="images/photography/Flowers.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Birds</a>
+                        </div>
+                        <a data-toggle="modal" href="#birdsModal">
+                            <img src="images/photography/Birds.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Nature</a>
+                        </div>
+                        <a data-toggle="modal" href="#natureModal">
+                            <img src="images/photography/Nature.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Reflections</a>
+                        </div>
+                        <a data-toggle="modal" href="#reflectionsModal">
+                            <img src="images/photography/Reflections.jpg">
+                        </a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Cycling</a>
+                        </div>
+                        <a data-toggle="modal" href="#cyclingModal">
+                            <img src="images/photography/Cycling.jpg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    <div class="container theme-showcase">
-        <div class="accordian">
-            <ul>
-                <li>
-                    <div class="image_title">
-                        <a href="#">Breakfast Combos</a>
-                    </div>
-                    <a data-toggle="modal" href="#breakfastModal">
-                        <img src="images/menu/combos/breakfast.jpg">
-                    </a>
-                </li>
-                <li>
-                    <div class="image_title">
-                        <a href="#">Lunch Combos</a>
-                    </div>
-                    <a data-toggle="modal" href="#lunchModal">
-                        <img src="images/menu/combos/lunch.jpg">
-                    </a>
-                </li>
-                <li>
-                    <div class="image_title">
-                        <a href="#">Dinner Combos</a>
-                    </div>
-                    <a data-toggle="modal" href="#dinnerModal">
-                        <img src="images/menu/combos/dinner.jpg">
-                    </a>
-                </li>
-            </ul>
+            <!--div id="instafeed"></div>
+            <div class="controls">
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div-->
+            <br/>
+            <div class="instagram_list" id="js-instagram-list">
+            </div>
+
         </div>
-        <br>
-        <div id="userInfo">
-            <form>
-                <label for="userLocation"> Enter your Location </label>
-                <input type="text" name="userLocation" class="biginput" id="userLocation"/>
-            </form>
-            <div id="serviceUnavailableMessage" hidden="hidden">
-                <h2>
-                    <span class="label label-warning"> Our service is not available at selected location </span>
-                </h2>
+    </div> <!-- photography page -->
+    <div class="page-section" id="work">    
+        <!--div id="blog">
+            <a class="wordpress-timeline" href="http://godsownhalo.wordpress.com" data-theme="dark" width="700" height="640" lang="en" data-show-gravatars="false">Recent Posts</a>
+        </div-->
+        <div class="github-widget pull-left"
+        	data-toggle="github-widget"
+            data-user="indraprabha"
+            data-widget="repos"
+        	data-title="My GitHub repos"
+        	data-footer="auto"
+        	data-extrainfo="true"
+        	data-limit="4">
+        </div>
+        <div id="contact-me">
+            <p id="intro"> I'm a Freelance Online Presence Consultant for Small Business Owners & Professionals who are looking to build / enhance their Social Presence and Network..  </p>
+            <br/>
+            <div id="contact">
+                <a href="mailto:indraprabha@outlook.com"> <i class="icon icon-envelope-alt" aria-hidden="true"></i> </a>
             </div>
         </div>
-        <br>
-        <div id="menu" class="container panel panel-red" hidden="hidden">
-            <div class="panel-heading">
-                <h3 class="panel-title">Combo Options</h3>
-            </div>
-            <div class="panel-body">
-                <div class="row">
-                    <div class="col-md-4 col-xs-4">
-                        <a data-toggle="modal" href="#breakfastModal">
-                            <img class="thumbnail" src="images/menu/combos/breakfast.jpg">
-                        </a>
-                        <div id="breakfastModal" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div id="breakfastCarousel" class="carousel slide" data-ride="carousel">
-                          <!-- Indicators -->
-                          <ol class="carousel-indicators">
-                            <li data-target="#breakfastCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#breakfastCarousel" data-slide-to="1"></li>
-                            <li data-target="#breakfastCarousel" data-slide-to="2"></li>
-                            <li data-target="#breakfastCarousel" data-slide-to="3"></li>
-                            <li data-target="#breakfastCarousel" data-slide-to="4"></li>
-                          </ol>
-
-                           <!-- Wrapper for slides -->
-                           <div class="carousel-inner">
-                             <div class="item active">
-                                <img src="images/menu/breakfast/monday.jpg" class="img-responsive"/>
-                                <div class="carousel-caption">Monday</div>
-                             </div>
-                             <div class="item">
-                                    <img src="images/menu/breakfast/tuesday.jpg" class="img-responsive"/>
-                                    <div class="carousel-caption">Tuesday</div>
-                             </div>
-                             <div class="item">
-                                    <img src="images/menu/breakfast/wednesday.jpg" class="img-responsive"/>
-                                    <div class="carousel-caption">Wednesday</div>
-                             </div>
-                             <div class="item">
-                                    <img src="images/menu/breakfast/thursday.jpg" class="img-responsive"/>
-                                    <div class="carousel-caption">Thursday</div>
-                             </div>
-                             <div class="item">
-                                    <img src="images/menu/breakfast/friday.jpg" class="img-responsive"/>
-                                    <div class="carousel-caption">Friday</div>
-                             </div>
-                           </div>
-                          <!-- Controls -->
-                          <a class="left carousel-control" href="#breakfastCarousel"
-                             role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-
-                          </a>
-                          <a class="right carousel-control" href="#breakfastCarousel"
-                             role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-
-                          </a>
-                      </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="addToCartSection">
-                            <div class="checkbox checkbox-warning checkbox-circle">
-                                <input id="breakfastSelect" type="checkbox" checked/>
-                                <label for="breakfastSelect"> Breakfast Combo </label>
-                            </div>
-                            <p class="tiny">All weekdays (Mon-Fri) breakfast delivery </p>
-                            <span class="badge"> 300 Rs.</span>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-4">
-                        <a data-toggle="modal" href="#lunchModal">
-                            <img class="thumbnail" src="images/menu/combos/lunch.jpg">
-                        </a>
-                        <div id="lunchModal" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div id="lunchCarousel" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#lunchCarousel" data-slide-to="0" class="active">
-                                            </li>
-                                            <li data-target="#lunchCarousel" data-slide-to="1"></li>
-                                            <li data-target="#lunchCarousel" data-slide-to="2"></li>
-                                            <li data-target="#lunchCarousel" data-slide-to="3"></li>
-                                            <li data-target="#lunchCarousel" data-slide-to="4"></li>
-                                        </ol>
-
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner">
-                                            <div class="item active">
-                                                <img src="images/menu/lunch/monday.jpg" class="img-responsive" alt="Meals with Sambar"/>
-                                                <div class="carousel-caption">Monday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/lunch/tuesday.jpg" class="img-responsive" alt="Meals with Keera Kolambu"/>
-                                                <div class="carousel-caption">Tuesday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/lunch/wednesday.jpg" class="img-responsive" alt="Variety Rice"/>
-                                                <div class="carousel-caption">Wednesday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/lunch/thursday.jpg" class="img-responsive" alt="Meals with Mor Kolambu"/>
-                                                <div class="carousel-caption">Thursday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/lunch/friday.jpg" class="img-responsive" alt="Meals with Sambar"/>
-                                                <div class="carousel-caption">Friday</div>
-                                            </div>
-                                        </div>
-                                        <!-- Controls -->
-                                        <a class="left carousel-control" href="#lunchCarousel"
-                                           role="button" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-
-                                        </a>
-                                        <a class="right carousel-control" href="#lunchCarousel"
-                                           role="button" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="addToCartSection">
-                            <div class="checkbox checkbox-warning checkbox-circle">
-                                <input id="lunchSelect" type="checkbox" checked/>
-                                <label for="lunchSelect"> Lunch Combo </label>
-                            </div>
-                            <p class="tiny">All weekdays (Mon-Fri) lunch delivery </p>
-                            <span class="badge"> 400 Rs.</span>
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 col-xs-4">
-                        <a data-toggle="modal" href="#dinnerModal">
-                            <img class="thumbnail" src="images/menu/combos/dinnerOptions.jpg">
-                        </a>
-                        <div id="dinnerModal" class="modal fade">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div id="dinnerCarousel" class="carousel slide" data-ride="carousel">
-                                        <!-- Indicators -->
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#dinnerCarousel" data-slide-to="0" class="active">
-                                            </li>
-                                            <li data-target="#dinnerCarousel" data-slide-to="1"></li>
-                                            <li data-target="#dinnerCarousel" data-slide-to="2"></li>
-                                            <li data-target="#dinnerCarousel" data-slide-to="3"></li>
-                                            <li data-target="#dinnerCarousel" data-slide-to="4"></li>
-                                        </ol>
-
-                                        <!-- Wrapper for slides -->
-                                        <div class="carousel-inner">
-                                            <div class="item active">
-                                                <img src="images/menu/dinner/monday.jpg" class="img-responsive" alt="Chappathi"/>
-                                                <div class="carousel-caption">Monday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/dinner/tuesday.jpg" class="img-responsive" alt="Uthappam"/>
-                                                <div class="carousel-caption">Tuesday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/dinner/wednesday.jpg" class="img-responsive" alt="Idli"/>
-                                                <div class="carousel-caption">Wednesday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/dinner/thursday.jpg" class="img-responsive" alt="Kichidi"/>
-                                                <div class="carousel-caption">Thursday</div>
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/menu/dinner/friday.jpg" class="img-responsive" alt="Idiyappam"/>
-                                                <div class="carousel-caption">Friday</div>
-                                            </div>
-                                        </div>
-                                        <!-- Controls -->
-                                        <a class="left carousel-control" href="#dinnerCarousel"
-                                           role="button" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-
-                                        </a>
-                                        <a class="right carousel-control" href="#dinnerCarousel"
-                                           role="button" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="addToCartSection">
-                            <div class="checkbox checkbox-warning checkbox-circle">
-                                <input id="dinnerSelect" type="checkbox" checked/>
-                                <label for="dinnerSelect"> Dinner Combo </label>
-                            </div>
-                            <p class="tiny">All weekdays (Mon-Fri) dinner delivery </p>
-                            <span class="badge"> 300 Rs.</span>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <button type="button" id="placeOrderButton" class="btn btn-lg btn-warning"> Place Order </button>
-                </div>
-            </div>
-		</div>
-        <hr/>
-    </div>
+    </div> <!-- blog page -->
     <!--div id="ad" class="container" style="display:block;position: absolute;bottom: 150px;width: 100%;"></div-->
  {/body}

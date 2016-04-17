@@ -1,0 +1,6 @@
+Server listening on http://localhost:NaN
+Connecting to mongodb://localhost:27017/mealbasketdb
+Application ready to serve requests.
+Environment: development
+- - - [16/Apr/2016:06:35:09 +0000] "GET / HTTP/1.1" 200 4825 "-" "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; WOW64; Trident/7.0; LCJB)"
+- - - [16/Apr/2016:06:35:14 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; WOW64; Trident/7.0; LCJB)"
