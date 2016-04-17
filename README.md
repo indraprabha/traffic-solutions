@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-MealBasket
-===========
+Gods Own Halo
 
-A catering site built with Nodejs-Express-Kraken
-=======
-# mealbasket-in
->>>>>>> aa2c651730326b41cfe291788dccedf6850a128a
+My own personal website built with minimalist appeal and yet sophiticated :)
