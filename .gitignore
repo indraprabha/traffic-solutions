@@ -1,7 +1,9 @@
 node_modules/*
 .build/*
 .settings/*
-
+.ntvs_analysis.*
+.vs/*
+trafficSolutions.njsproj
 /.build
 /.idea
 /.settings

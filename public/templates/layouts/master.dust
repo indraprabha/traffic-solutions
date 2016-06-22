@@ -3,53 +3,93 @@
     <head>
         <meta charset="utf-8" />
         <title>{+title /}</title>
-        <script type="text/javascript" src="http://widgets.wp.com/platform.js"></script>
-        <link rel="stylesheet" href="/css/instascroll.css"/>
-
         <!-- Bootstrap -->
         <link rel="stylesheet" href="/css/bootstrap.css"/>
         <link rel="stylesheet" href="/css/bootstrap-theme.css"/>
 
         <!-- FontAwesome -->
         <link rel="stylesheet" href="/css/font-awesome.min.css"/>
-        <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Dancing+Script' rel='stylesheet' type='text/css'>
 
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="css/code-player.css"/>
-        <link rel="stylesheet" href="css/metro.css"/>
         <link rel="stylesheet" href="css/app.css"/>
-        <link rel="stylesheet" href="css/checkbox.css"/>
         <link rel="stylesheet/less" type="text/css" href="styles.less" />
 
     </head>
-    <body role="document">
+    <body role="document" class="container">
     	<header role="heading">
-            <!--div class="breadcrumb">
-                <a href="#">Home</a>
-                <a href="#work">Work</a>
-                <a href="#photography">Photography</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact-me">Contact</a>
-            </div-->
-
-            <div id="about">
-                <figure class="effect-sarah">
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<a class="navbar-brand" href="#">Intelligent Traffic Solutions</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse floatright">
+                  <ul class="nav navbar-nav">
+                      <li {@eq key=active value="home"} class="active" {/eq} ><a href="/">Home</a></li>
+                      <li {@eq key=active value="services"} class="active" {/eq} ><a href="#services">Services</a></li>
+                      <li {@eq key=active value="about-us"} class="active" {/eq} ><a href="#about">About Us</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </nav>
+			<div id="imageRolloverContainer">
+				<img id="headerImage" src="images/wallpaper.jpg" width="1000px" height="400px">
+				<div id="parkingDiv">
+					<a href="#parkingLink">
+						<p class="caption">Parking Stats</p>
+						<img id="parkingColorImage" class="colorImage" src="images/parking.jpg">
+					</a>
+				</div>
+				<div id="bicycleDiv">
+					<a href="#bicycleLink">
+						<p class="caption">Bicycle Count</p>
+						<img id="bicycleColorImage" class="colorImage" src="images/bicycle.jpg">
+					</a>
+				</div>
+				<div id="roadTubeDiv">
+					<a href="#roadTubeLink">
+						<p class="caption">Road Tube Study</p>
+						<img id="roadTubeColorImage" class="colorImage" src="images/road-tube.jpg">
+					</a>
+				</div>
+				<div id="pedestrianDiv">
+					<a href="#pedestrianLink">
+						<p class="caption">Pedestrian Count</p>
+						<img id="pedestrianColorImage" class="colorImage" src="images/pedestrian.jpg">
+					</a>
+				</div>
+				<div id="otherDiv">
+					<a href="#otherLink">
+						<p class="caption">Other Study</p>
+						<img id="otherColorImage" class="colorImage" src="images/other.jpg">
+					</a>
+				</div>
+				<map name="mapLinks">
+				  <area id="parkingArea" shape="rect" coords="5,75,123,480" alt="Parking Statistics" href="#">
+				  <area id="bicycleArea" shape="rect" coords="140,75,263,480" alt="Bicycle Count Statistics" href="#">
+				  <area id="roadTubeArea" shape="rect" coords="330,75,530,480" alt="Road Tube Volume Statistics" href="#">
+				  <area id="pedestrianArea" shape="rect" coords="560,75,670,480" alt="Pedestrian Statistics" href="#">
+				  <area id="otherArea" shape="rect" coords="658,75,993,480" alt="Other Studies" href="#">
+				</map>
+				<figure class="effect-sarah">
 					<figcaption>
-						<h2><a href="#work">Indra</a></h2>
-						<p>At work, call me Indra</p>
+						<h2><a href="#">Upload Video</a></h2>
+						<p>Upto 100mb size</p>
 					</figcaption>			
 				</figure>
-                <figure class="effect-sarah">
+				<figure class="effect-sarah">
 					<figcaption>
-						<h2><a href="#photography"> Prabha </a></h2>
-						<p>At home, everyone calls me Prabha</p>
+						<h2><a href="#"> Download Data </a></h2>
+						<p>95%+ Accuracy & 24 Hours Turnaround </p>
 					</figcaption>			
 				</figure>
-                <br>
-                <h3> Information Architect </h3>
-                <h3> Photographer </h3>
-                <h3> Fashionista </h3>
-            </div>
+			</div>
     	</header>
         {+body /}
 
@@ -58,11 +98,10 @@
          <footer>
              <div class="icons">
                  <!--a href="#" class="tw"><i class="icon-twitter"></i></a-->
-                 <a href="https://www.facebook.com/indraprabha" class="fb"><i class="icon-facebook"></i></a>
+                 <a href="https://www.facebook.com/intelligenttrafficsolutions" class="fb"><i class="icon-facebook"></i></a>
                  <!--a href="#" class="gp"><i class="icon-google-plus"></i></a-->
-                 <a href="https://www.instagram.com/godsownhalo" class="ig"><i class="icon-instagram"></i></a>
-                 <a href="https://www.linkedin.com/in/indraprabha-a-18a11914" class="li"><i class="icon-linkedin"></i></a>
-                 <!--a href="#" class="yt"><i class="icon-youtube"></i></a-->
+                 <!--a href="https://www.instagram.com/intelligenttrafficsolutions" class="ig"><i class="icon-instagram"></i></a-->
+                 <a href="https://www.youtube.com/user/intelligenttrafficsolutions" class="yt"><i class="icon-youtube"></i></a>
                  © 2016 copyright Indraprabha
              </div>
         </footer>
@@ -72,11 +111,6 @@
         <script src="/js/jquery.easing.min.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="/js/bootstrap.min.js"></script>
-
-        <script type="text/javascript" src="/js/jquery.jsonp-2.4.0.min.js"></script>
-        <script type="text/javascript" src="/js/instascroll.js"></script>
-        <script src="/js/Enabler.js"></script>
-        <script src="/js/bootstrap-github-widget.min.js"></script>
         <script src="/js/app.js"></script>
 
     </body>

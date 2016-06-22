@@ -1,124 +1,78 @@
 {>"layouts/master" /}
 
 {<body}
-    <div id="photography" class="page-section">
-        <div class="container theme-showcase">
-            <div class="accordian">
-                <ul>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Adventures</a>
-                        </div>
-                        <a data-toggle="modal" href="#AdventuresModal">
-                            <img src="images/photography/Adventures.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Travel</a>
-                        </div>
-                        <a data-toggle="modal" href="#travelModal">
-                            <img src="images/photography/Travel.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Landscapes</a>
-                        </div>
-                        <a data-toggle="modal" href="#landscapeModal">
-                            <img src="images/photography/Landscapes.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Monochromes</a>
-                        </div>
-                        <a data-toggle="modal" href="#MonochromesModal">
-                            <img src="images/photography/Monochromes.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Cityscape</a>
-                        </div>
-                        <a data-toggle="modal" href="#CityscapeModal">
-                            <img src="images/photography/Cityscape.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Flowers</a>
-                        </div>
-                        <a data-toggle="modal" href="#FlowersModal">
-                            <img src="images/photography/Flowers.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Birds</a>
-                        </div>
-                        <a data-toggle="modal" href="#birdsModal">
-                            <img src="images/photography/Birds.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Nature</a>
-                        </div>
-                        <a data-toggle="modal" href="#natureModal">
-                            <img src="images/photography/Nature.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Reflections</a>
-                        </div>
-                        <a data-toggle="modal" href="#reflectionsModal">
-                            <img src="images/photography/Reflections.jpg">
-                        </a>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Cycling</a>
-                        </div>
-                        <a data-toggle="modal" href="#cyclingModal">
-                            <img src="images/photography/Cycling.jpg">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+    <div class="page-section" id="services">
+	<table class="table table-hover"><tbody>
+		<tr>
+			<td>
+				<img id="roadTubeLink" class="serviceImage" src="images/services/Intersection-counts.png" alt="Intersection Counts">
+				<div class="serviceDetails">
+					<h3> Intersection Counts </h3>
+					Intersection Count reports on the directional volume of traffic as it moves through a signalized or unsignalized intersection.Also called a Turning Movement Count (TMC), our Intersection Count study tabulates the number of left-turn, right-turn, u-turn and through movements for each leg.
+				</div>
+			</td>
+			<td>
+				<img class="serviceImage" src="images/services/roundabout-counts.jpg" alt="Roundabout Counts">
+				<div class="serviceDetails">
+					<h3> Roundabout Counts </h3>
+					Roundabout Count Report totals the turning movement volume (TMV) of a roundabout, detailing the entry, circulating and exit flow rate for each roundabout leg, from origin to destination. This data can be used to determine the capacity and performance efficiency of the different roundabout approaches, and the roundabout as a whole.</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="pedestrianLink" class="serviceImage" src="images/services/Pedestrian-counts.png" alt="Pedestrian Counts">
+				<div class="serviceDetails">
+					<h3> Pedestrian Counts </h3>
+					bi-directional volume data for sidewalks, paths, venue entrances, or retail locations.Peds classifications include Minor, Adult, Elderly, Mobility Impaired etc.,Call times for pedestrian crossings data can also be provided based on request! </div>
+			</td>
+			<td>
+				<img id="bicycleLink" class="serviceImage" src="images/services/Bicycle-counts.png" alt="Bicycle Counts">
+				<div class="serviceDetails">
+					<h3> Bicycle Counts </h3>
+					Pedestrian & Bicycle Junction Counts for collecting turning movement data at pedestrian-and-bike-specific locations.A Junction Count could include locations like a street corner, intersecting paths in a park, or a retail store entrance </div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="parkingLink" class="serviceImage" src="images/services/Parking-surveys.jpg" alt="Parking-surveys">
+				<div class="serviceDetails">
+					<h3> Parking Study </h3>
+					Parking surveys data including simple car park accumulation surveys to more detailed duration of stay surveys. Results can be tailored to meet client's specific requirements.</div>
+			</td><td>
+				<img class="serviceImage" src="images/services/queues-survey.png" alt="Queues Survey">
+				<div class="serviceDetails">
+					<h3> Queues Survey </h3>
+					Queue lenghth surveys can be undertaken both manually and with digital recording equipment depending on the nature of the survey and the client's requirements. Queues are measured either in vehicles/ PCU's or distance from the junction and can be recorded at various time intervals although the most common are 5 minute and 15 minute intervals. provides queue length data lane wise</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="otherLink" class="serviceImage" src="images/services/Rail-punctuality-survey.png" alt="Rail Punctuality Survey">
+				<div class="serviceDetails">
+					<h3> Rail Punctuality Survey </h3>
+					Provides arrival time, duration of stay & departure time for Rail & Bus including Rail number & Bus registration numbers</div>
+			</td><td>
+				<img class="serviceImage" src="images/services/Traffic-Violations.jpg" alt="Traffic Violations">
+				<div class="serviceDetails">
+					<h3> Traffic Violations </h3>
+					Provides reports on Signal jump, Lane crossing, Back queue, Access or leave parking, Overtaking, U turns, Standing on dual carriage way,Occupants exit at intersection, Hoon type behaviors, non designated peds crossing, vehicle conflicts/near miss, Opposite driving, etc</div>
+			</td>
+		</tr>
+	</tbody></table>
+	</div>
 
-            <!--div id="instafeed"></div>
-            <div class="controls">
-                <div class="prev"></div>
-                <div class="next"></div>
-            </div-->
-            <br/>
-            <div class="instagram_list" id="js-instagram-list">
-            </div>
-
-        </div>
-    </div> <!-- photography page -->
-    <div class="page-section" id="work">    
-        <!--div id="blog">
-            <a class="wordpress-timeline" href="http://godsownhalo.wordpress.com" data-theme="dark" width="700" height="640" lang="en" data-show-gravatars="false">Recent Posts</a>
-        </div-->
-        <div class="github-widget pull-left"
-        	data-toggle="github-widget"
-            data-user="indraprabha"
-            data-widget="repos"
-        	data-title="My GitHub repos"
-        	data-footer="auto"
-        	data-extrainfo="true"
-        	data-limit="4">
-        </div>
-        <div id="contact-me">
-            <p id="intro"> I'm a Freelance Online Presence Consultant for Small Business Owners & Professionals who are looking to build / enhance their Social Presence and Network..  </p>
+    <div class="page-section" id="about">
+        <div id="our-story" class="panel">
+            <p id="intro"> 
+			<h3> Our Story </h3>
+			Intelligent Traffic Solutions, Inc. has a highly trained, professional staff with extensive experience conducting traffic counts and other data collection projects. The firm uses state-of-art counting equipment and software to ensure all data is reliable and user friendly. The firm is located in India and partners with other traffic data collection firms and engineering firms all over the world to provide cost effective traffic counting services in many locations. 
+			<br/>
+			Service include road tube volume/speed data collection and other specialized traffic collection studies.
+			</p>
             <br/>
             <div id="contact">
-                <a href="mailto:indraprabha@outlook.com"> <i class="icon icon-envelope-alt" aria-hidden="true"></i> </a>
+                <a href="mailto:kanchukannaiyan@gmail.com"> <i class="icon icon-envelope-alt" aria-hidden="true"></i> </a>
             </div>
         </div>
-    </div> <!-- blog page -->
-    <!--div id="ad" class="container" style="display:block;position: absolute;bottom: 150px;width: 100%;"></div-->
+    </div> 
  {/body}
